@@ -378,7 +378,7 @@ class Order
     protected $billingAddress;
 
     /**
-     * @var OrderAddress
+     * @var OrderAddress|null
      */
     protected $shippingAddress;
 
@@ -1523,9 +1523,9 @@ class Order
     }
 
     /**
-     * @return OrderAddress
+     * @return OrderAddress|null
      */
-    public function getShippingAddress(): OrderAddress
+    public function getShippingAddress(): ?OrderAddress
     {
         return $this->shippingAddress;
     }

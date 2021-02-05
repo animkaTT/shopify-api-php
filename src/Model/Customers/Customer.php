@@ -21,7 +21,7 @@ class Customer
     protected $id;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $email;
 
@@ -41,12 +41,12 @@ class Customer
     protected $updatedAt;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $firstName;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $lastName;
 
@@ -91,7 +91,7 @@ class Customer
     protected $taxExempt;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $phone;
 
@@ -136,7 +136,7 @@ class Customer
     protected $adminGraphqlApiId;
 
     /**
-     * @var Address
+     * @var Address|null
      */
     protected $defaultAddress;
 
@@ -157,9 +157,9 @@ class Customer
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getEmail(): string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -221,9 +221,9 @@ class Customer
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getFirstName(): string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -237,9 +237,9 @@ class Customer
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getLastName(): string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -381,9 +381,9 @@ class Customer
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPhone(): string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
@@ -525,9 +525,9 @@ class Customer
     }
 
     /**
-     * @return Address
+     * @return Address|null
      */
-    public function getDefaultAddress(): Address
+    public function getDefaultAddress(): ?Address
     {
         return $this->defaultAddress;
     }

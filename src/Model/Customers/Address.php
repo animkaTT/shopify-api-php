@@ -21,17 +21,17 @@ class Address
     protected $id;
 
     /**
-     * @var int
+     * @var int|null
      */
     protected $customerId;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $firstName;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $lastName;
 
@@ -41,57 +41,57 @@ class Address
     protected $company;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $address1;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $address2;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $city;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $province;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $country;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $zip;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $phone;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $name;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $provinceCode;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $countryCode;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $countryName;
 
@@ -133,9 +133,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getFirstName(): string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -149,9 +149,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getLastName(): string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -165,9 +165,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCompany(): string
+    public function getCompany(): ?string
     {
         return $this->company;
     }
@@ -181,9 +181,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getAddress1(): string
+    public function getAddress1(): ?string
     {
         return $this->address1;
     }
@@ -197,9 +197,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getAddress2(): string
+    public function getAddress2(): ?string
     {
         return $this->address2;
     }
@@ -213,9 +213,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->city;
     }
@@ -229,9 +229,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getProvince(): string
+    public function getProvince(): ?string
     {
         return $this->province;
     }
@@ -245,9 +245,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCountry(): string
+    public function getCountry(): ?string
     {
         return $this->country;
     }
@@ -261,9 +261,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getZip(): string
+    public function getZip(): ?string
     {
         return $this->zip;
     }
@@ -277,9 +277,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPhone(): string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
@@ -293,9 +293,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -309,9 +309,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getProvinceCode(): string
+    public function getProvinceCode(): ?string
     {
         return $this->provinceCode;
     }
@@ -325,9 +325,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCountryCode(): string
+    public function getCountryCode(): ?string
     {
         return $this->countryCode;
     }
@@ -341,9 +341,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCountryName(): string
+    public function getCountryName(): ?string
     {
         return $this->countryName;
     }
